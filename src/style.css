@@ -1,0 +1,201 @@
+@import './css/reset.css';
+@import './css/vars.css';
+@import './css/components/header.css';
+@import './css/components/banner.css';
+@import './css/components/product.css';
+@import './css/components/detail.css';
+@import './css/components/cart.css';
+@import './css/components/viewed.css';
+@import './css/components/subscription.css';
+@import './css/components/order.css';
+@import './css/components/longread.css';
+
+::selection {
+  background: var(--redColor);
+}
+
+/* stylelint-disable */
+* {
+  box-sizing: border-box;
+}
+/* stylelint-enable */
+
+html {
+  box-sizing: inherit;
+  font-size: 62.5%;
+  height: 100%;
+}
+
+.webshop__wrapper {
+  font-family: 'swiss721', sans-serif;
+  font-size: var(--regularFont);
+  line-height: 1.5;
+}
+
+.longread__wrapper {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: var(--bigBold);
+  line-height: 1.4;
+  color: var(--darkColor);
+  width: 100vw;
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+  scroll-snap-type: mandatory;
+  scroll-snap-type: y mandatory;
+  background-color: var(--backgroundColor);
+}
+
+.hidden {
+  display: none;
+}
+
+.show-js {
+  display: none;
+}
+
+.webshop__primary-btn-small {
+  background-color: var(--redColor);
+  text-decoration: none;
+  border: none;
+  font-size: var(--smallFont);
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 2.9rem;
+  padding: 0 var(--extraSmallMargin);
+  cursor: pointer;
+}
+
+.webshop__primary-btn-small svg {
+  margin-right: var(--extraSmallMargin);
+}
+
+.webshop__primary-btn-small .webshop__primary-btn-small__svg {
+  margin-right: 0;
+}
+
+.webshop__primary-btn-big {
+  background-color: var(--redColor);
+  text-decoration: none;
+  border: none;
+  font-size: var(--regularFont);
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 4.5rem;
+  padding: 0 var(--smallMargin);
+  cursor: pointer;
+}
+
+.webshop__primary-btn-big svg {
+  margin-right: var(--extraSmallMargin);
+}
+
+.webshop__favorite-btn {
+  border: .1rem solid var(--redColor);
+  width: 2.9rem;
+  height: 2.9rem;
+  margin: 0 var(--smallMargin) 0 var(--extraSmallMargin);
+  background-color: rgba(100, 100, 100, 0);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @media (--extrasmall-viewport) {
+    margin: 0;
+  }
+}
+
+.webshop__favorite-btn:hover > svg {
+  fill: var(--redColor);
+}
+
+.webshop__favorite-btn-big {
+  border: .1rem solid var(--redColor);
+  width: 4.5rem;
+  height: 4.5rem;
+  margin: 0 var(--smallMargin) 0 var(--extraSmallMargin);
+  background-color: rgba(100, 100, 100, 0);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.webshop__secondary-btn-small {
+  border: .1rem solid var(--redColor);
+  text-transform: uppercase;
+  color: var(--redColor);
+  text-decoration: none;
+  font-size: var(--smallFont);
+  height: 2.9rem;
+  padding: 0 var(--extraSmallMargin);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.webshop__secondary-btn-big {
+  border: .1rem solid var(--redColor);
+  text-transform: uppercase;
+  color: var(--redColor);
+  text-decoration: none;
+  font-size: var(--regularFont);
+  height: 4.5rem;
+  padding: 0 var(--extraSmallMargin);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  cursor: pointer;
+  background: none;
+}
+
+.webshop__favorite-btn-big:hover > svg {
+  fill: var(--redColor);
+}
+
+.webshop__strong {
+  font-weight: bold;
+}
+
+textarea {
+  resize: none;
+}
+
+.box {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  color: white;
+  font-family: 'swiss721-Condensed', sans-serif;
+  text-transform: uppercase;
+  font-size: var(--regularFont);
+  padding: var(--extraSmallMargin);
+}
+
+.error {
+  background-color: var(--redColor);
+}
+
+.info {
+  background-color: var(--greenColor);
+}
+
+.form-error {
+  color: var(--redColor);
+}
+
+.thanks {
+  color: var(--greenColor);
+}
